@@ -44,6 +44,9 @@ Firecracker snapshot consists of 2 files:
 
 ### `edit-vmstate` command
 
+#### `update-rootfs-path` subcommand
+> This command will update the rootfs path to `/mnt/disks/fc-envs/v1/rootfs.ext4` of the provided `vmstate` file.
+
 #### `remove-regs` subcommand (aarch64 only)
 
 > This command is used to remove specified registers from vcpu states inside

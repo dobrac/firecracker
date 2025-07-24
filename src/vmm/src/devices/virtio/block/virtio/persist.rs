@@ -65,6 +65,12 @@ pub struct VirtioBlockState {
     file_engine_type: FileEngineTypeState,
 }
 
+impl VirtioBlockState {
+    pub fn set_disk_path(&mut self, path: String) {
+        self.disk_path = path;
+    }
+}
+
 impl Persist<'_> for VirtioBlock {
     type State = VirtioBlockState;
     type ConstructorArgs = BlockConstructorArgs;
